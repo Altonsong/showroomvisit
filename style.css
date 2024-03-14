@@ -1,0 +1,503 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f7f8f5;
+}
+
+.nav {
+  display:grid;
+  background: white;
+  grid-template-columns: 100px 100px 100px 100px;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.infoArea {
+  display:grid;
+  grid-template-columns: 240px 600px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  width: 980px;
+  height: 300px;
+  margin: auto;
+}
+
+.sectionBox {
+  display:flex;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 40px;
+  width: 1080px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.inNonNav2 {
+  display:flex;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  width: 1080px;
+  margin: auto;
+  /* border: 1px solid black;  */
+}
+
+.itemArea {
+  width: 980px;
+  margin: auto;
+  padding-bottom: 20px;
+  /* border: 1px solid black;  */
+}
+
+.inSpace {
+  width: 980px;
+  height:80px;
+  margin: auto;
+  padding-bottom: 20px;
+  /* border: 1px solid purple;  */
+}
+
+.kitchenArea,
+.bath1Area, 
+.bath2Area,
+.bath3Area,
+.floorArea,
+.paintArea {
+  display:grid;
+  grid-template-rows: auto;
+  gap: 0;
+  width: 980px;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+
+.logoRow {
+  display:flex;
+  align-items: center;
+  color: #699A30;
+  width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logoRow > div {
+  flex-grow: 1;
+}
+
+.kitchenLogoText {
+  display:flex;
+  align-items: center;
+  color: #699A30;
+}
+
+.sectionExcludeText {
+  display:flex;
+  justify-content: flex-end;
+  color: #b0b0b0;
+}
+
+.kitchenCabinetRow, 
+.bathStyleRow {
+  display: grid;
+  grid-template-columns: 320px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.floorStyleRow label,
+.paintStyleRow label {
+  font-weight: 300;  
+  font-size: 14px;
+  text-decoration: underline;
+  align-items: center;
+  color: #333;
+  border: 0px solid #ccc;
+}
+
+.floorStyleRow,
+.paintStyleRow {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.bathStyleRow p {
+  font-weight: 300;  
+  font-size: 14px;
+  text-decoration: underline;
+  text-align: right;
+  color: #333;
+  border: 0px solid #ccc;
+  width: 1000px;
+}
+
+.laminateArea,
+.vinylArea,
+.hardwoodArea,
+.floortileArea,
+.wallPaintArea,
+.doorAmount {
+  display: inline-block;
+  padding: 5px 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width:50px;
+}
+
+.cabinetCount {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width:40px;
+}
+
+.titleRow {
+  display: grid;
+  grid-template-columns: 160px 300px 200px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  border-bottom: 1px solid #E2E5E2;
+}
+
+.itemBox {
+  display:grid;
+  grid-template-rows: auto;
+  /* border: 1px solid yellow; */
+}
+
+.choiceRow {
+  font-weight: 300;
+
+  display: grid;
+  grid-template-columns: 160px 300px 500px 20px;
+  align-items: center;
+  border-bottom: 1px solid #f7f8f5;
+  /* background-color: antiquewhite; */
+  padding-left: 20px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.choiced {
+  font-weight: 300;
+
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.textBox {
+  font-weight: lighter;
+}
+.imgItems {
+  height: 60px;
+}
+
+.optionRow {
+  display: none; 
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid #E2E5E2;
+  padding-left: 20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  font-weight: 300;
+}
+
+.optionColumn{
+  font-weight: 300;
+  display: grid;
+  grid-template-rows: 20px 60px 20px;
+  justify-items: center;    
+}
+
+.optionPrice {
+  color:#699A30
+}
+
+#titleImage {
+  /* padding-right: 20px; */
+  border-radius: 10px;
+  width:210px;
+}
+
+.unitInfo {
+  display:grid;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  align-items: top;
+}
+
+.unitInfoTitle {
+  font-weight: regular;
+  font-size: 20px;
+}
+
+.unitInfoDetails {
+  font-weight: lighter;
+  font-size: 14px;
+  display:flex;
+  align-items: center;
+ }
+
+/* 隐藏默认的下拉箭头 */
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="#000" d="M5 7l5 5 5-5H5z"/></svg>'); 
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px;
+  background-color: transparent;
+  padding: 5px 30px 5px 10px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none; 
+  font-weight: lighter;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#howMany {
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+
+.kitchenCabinetRow label {
+  font-weight: 300;  
+  font-size: 14px;
+  text-decoration: underline;
+  align-items: center;
+  color: #333;
+  border: 0px solid #ccc;
+
+}
+
+label {
+  display: inline-block;
+  padding: 5px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #699A30;
+  color: white;
+  /* 可以根据需要修改选中时的样式 */
+}
+
+.checkbox-buttons input[type="checkbox"] {
+  display: none; /* 隐藏原生的复选框 */
+}
+
+.checkbox-buttons label {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkbox-buttons input[type="checkbox"]:checked + label {
+  background-color: #699A30;
+  color: white;
+}
+
+.estimateBtn {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#estimateBtn {
+  width:200px;
+  height: 50px;
+  background-color: #699A30;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  display: grid;
+  margin-top: 30px;
+  grid-template-rows: 200px 40px;
+  background-color: white;
+  font-weight: 300;
+}
+
+.footerText {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.footerRight {
+  padding-top:20px;
+  display: grid;
+    grid-template-columns: 200px 300px 100px;
+}
+
+.about div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.renomark {
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.footerLeft {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 300px;
+}
+
+.footerLeft div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.copyRight {
+text-align: right;
+padding-right: 10px;
+}
+
+.cabinetry-arrow, .countertop-arrow, .backsplash-arrow, .kitchenSink-arrow, .kitchenFaucet-arrow {
+  cursor: pointer;
+}
+
+.bath1WallTile-arrow,
+.bath1FloorTile-arrow,
+.bath1Vanity-arrow,
+.bath1VanityFaucet-arrow,
+.bath1VanityLight-arrow,
+.bath1VanityMirror-arrow,
+.bath1Toilet-arrow,
+.bath1Tub-arrow,
+.bath1ShowerFaucet-arrow,
+.bath1Shower-arrow,
+.bath1ShowerEnclosure-arrow,
+.laminateFloor-arrow,
+.vinylFloor-arrow,
+.hardwoodFloor-arrow,
+.tileFloor-arrow,
+.baseboard-arrow,
+.shoemold-arrow,
+.wallPaint-arrow,
+.doorPaint-arrow {
+  cursor: pointer;
+}
+
+.bathLogoText,
+.floorLogoText {
+  display:flex;
+  align-items: center;
+  color: #699A30;
+}
+
+.bathExcludeText,
+.floorExcludeText {
+  display:flex;
+  align-items: center;
+  color: #b0b0b0;
+}
+
+.bath1Exclude,
+.bath2Exclude,
+.bath3Exclude {
+  width: 1000px;
+  margin: auto;
+}
+
+.paintKind {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.floorKind {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.bathKind,
+.floorKind {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.bath1Style {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+
+
+
+.clientArea {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;  
+
+}
+
+.clientName,
+.clientAddress {
+  margin: 0 10px; 
+}
+
+.clientNameInput {
+  width: 150px;
+  height: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+}
+
+.clientAddressInput {
+  width: 300px;
+  height: 25px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
