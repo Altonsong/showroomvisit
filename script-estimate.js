@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const urlParams = new URLSearchParams(window.location.search);
-
   const stdPriceParam = urlParams.get('stdPrice');
-
   const costNumberElement = document.querySelector('.costNumber');
 
   if (stdPriceParam !== null) {
@@ -12,9 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   const urlParams = new URLSearchParams(window.location.search);
-
   const stdPriceParam = urlParams.get('stdPrice');
-
   const costNumberElement = document.querySelector('.costNumber');
 
   if (stdPriceParam !== null) {
@@ -44,6 +40,23 @@ document.addEventListener('DOMContentLoaded', function() {
   const excludePaint = urlParams.get('excludePaint') === 'true';
 
   hideExcludedSections(excludeKitchen, excludeBath1, excludeBath2, excludeBath3, excludeFloor, excludePaint);
+
+//----------------------------
+
+const weeksElement = document.querySelector('.weeks');
+
+if (excludeKitchen && excludeBath1 && excludeBath2 && excludeBath3) {
+  weeksElement.textContent = "1 week";
+} else if (excludeBath1 && excludeBath2 && excludeBath3) {
+  weeksElement.textContent = "3-4 weeks";
+} else if (excludeKitchen && excludeBath2 && excludeBath3) {
+  weeksElement.textContent = "3-4 weeks";
+} else if (!excludeBath3) {
+  weeksElement.textContent = "4-5 weeks";
+}
+
+//----------------------------
+
 });
 
 function hideExcludedSections(excludeKitchen, excludeBath1, excludeBath2, excludeBath3, excludeFloor, excludePaint) {
@@ -114,3 +127,4 @@ function shiftServiceAreas(excludedSection, selector) {
     });
   }
 }
+
