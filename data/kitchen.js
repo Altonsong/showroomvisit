@@ -137,7 +137,7 @@ const kitchenFaucets = [
   },
   {
     name: "Pull Out in Chrome",
-    image: "./photos/kitchen/Faucet/outchrome.jpeg",
+    image: "./photos/kitchen/faucet/outchrome.jpeg",
     price: "+80",
     detail:  "&nbsp;&nbsp;"
   },
