@@ -1,13 +1,13 @@
 const kitchenCabinets = [
   {
     name: "White Shaker",
-    image: "./photos/kitchen/cabinetry/whiteShaker.jpeg",
+    image: "./photos/kitchen/cabinetry/whiteshaker.jpeg",
     price: "+0",
     detail: "Custom transitional design cabinets, Lower &Upper cabinet"
   },
   {
     name: "Grey Shaker",
-    image: "./photos/kitchen/cabinetry/GreyShaker.jpeg",
+    image: "./photos/kitchen/cabinetry/Greyshaker.jpeg",
     price: "+900",
     detail: "Custom transitional design cabinets, Lower &Upper cabinet"
   },
