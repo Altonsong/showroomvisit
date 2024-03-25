@@ -423,7 +423,7 @@ let totalDeliCost = 0;
 let totalTravCost = 0;
 let totalClenCost = 0;
 
-const gMarRate = 0.18;
+const gMarRate = 0.19;
 let conTing = 0;
 let mFee = 0;
 
