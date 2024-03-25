@@ -264,6 +264,9 @@ locationSelect.addEventListener('change', function() {
         case 'vaughan':
             locationCost = 800;
             break;
+        case 'newmarket':
+            locationCost = 1200;
+            break;
         default:
             locationCost = 0;
             break;
