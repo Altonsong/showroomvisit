@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         useGrouping: true,
       });
 
-      costNumberElement.textContent = '$' + formattedPrice + '+HST';
+      costNumberElement.textContent = '$' + formattedPrice ;
     }
   }
 });
