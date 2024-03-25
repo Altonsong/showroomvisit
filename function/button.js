@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
       // 将总价合并到stdPrice中并向上取整到百位
-      stdPrice = Math.ceil((stdPrice + totalChoicePrice + choiceFloorPaintPrice) / 100) * 100;
+      stdPrice = Math.ceil((stdPrice + totalChoicePrice + choiceFloorPaintPrice) / 10) * 10;
       
       // 创建URL参数对象
       let urlParams = new URLSearchParams();
