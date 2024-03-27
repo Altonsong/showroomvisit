@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./photos/logo/favicon.ico"  type="image/x-icon">
+    <link rel="stylesheet" href="loginstyles.css">
+
+    <title>Login</title>
+</head>
+<body>
+        <div class="image">
+            <img src="./photos/login/login.jpg" id="loginImage">
+        </div>
+
+    <div class="login-container">
+
+                <form id="login-form">
+                    <h2>Login</h2>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+        </div>
+       
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'admin@renu.com' && password === 'user@renu.com') {
+
+                window.location.href = 'showroom.html';
+            } else {
+
+                alert('Authentication failed');
+            }
+        });
+    </script>
+</body>
+</html>
+
